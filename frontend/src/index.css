@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .hero {
+    background-size: cover;
+    background-position: center;
+  }
+}
