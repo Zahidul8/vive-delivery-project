@@ -48,7 +48,7 @@ function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       {/* Hero Slider */}
       <section className="relative">
         <Swiper
@@ -70,9 +70,9 @@ function Home() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
                   >
-                    <h1 className="text-6xl font-bold">{slide.title}</h1>
-                    <p className="py-6 text-xl">{slide.text}</p>
-                    <button className="btn btn-primary btn-lg">Learn More</button>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">{slide.title}</h1>
+                    <p className="py-6 text-base sm:text-lg md:text-xl">{slide.text}</p>
+                    <button className="btn btn-primary">Learn More</button>
                   </motion.div>
                 </div>
               </div>
@@ -85,7 +85,7 @@ function Home() {
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
           <motion.h2
-            className="text-4xl font-bold text-center mb-12"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -134,7 +134,7 @@ function Home() {
       <section className="py-20 bg-gradient-to-r from-base-200 to-base-300">
         <div className="container mx-auto px-4 text-center">
           <motion.h2
-            className="text-4xl font-bold mb-8"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -142,7 +142,7 @@ function Home() {
             Our Unique Value
           </motion.h2>
           <motion.p
-            className="text-lg max-w-2xl mx-auto"
+            className="text-base sm:text-lg max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -156,7 +156,7 @@ function Home() {
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
           <motion.h2
-            className="text-4xl font-bold text-center mb-12"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -202,7 +202,7 @@ function Home() {
       <section className="py-20 bg-base-200">
         <div className="container mx-auto px-4">
           <motion.h2
-            className="text-4xl font-bold text-center mb-12"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
